@@ -1,0 +1,7 @@
+C:\git\farmacia\farmacia\bin\Debug\farmacia.exe.config
+C:\git\farmacia\farmacia\bin\Debug\farmacia.exe
+C:\git\farmacia\farmacia\bin\Debug\farmacia.pdb
+C:\git\farmacia\farmacia\obj\Debug\farmacia.Properties.Resources.resources
+C:\git\farmacia\farmacia\obj\Debug\farmacia.csproj.GenerateResource.cache
+C:\git\farmacia\farmacia\obj\Debug\farmacia.exe
+C:\git\farmacia\farmacia\obj\Debug\farmacia.pdb
