@@ -5,3 +5,7 @@ C:\git\farmacia\farmacia\obj\Debug\farmacia.Properties.Resources.resources
 C:\git\farmacia\farmacia\obj\Debug\farmacia.csproj.GenerateResource.cache
 C:\git\farmacia\farmacia\obj\Debug\farmacia.exe
 C:\git\farmacia\farmacia\obj\Debug\farmacia.pdb
+C:\git\farmacia\farmacia\obj\Debug\farmacia.csprojAssemblyReference.cache
+C:\git\farmacia\farmacia\obj\Debug\farmacia.inicio.resources
+C:\git\farmacia\farmacia\obj\Debug\farmacia.Login.resources
+C:\git\farmacia\farmacia\obj\Debug\farmacia.Menu.resources
