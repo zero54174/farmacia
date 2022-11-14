@@ -24,7 +24,9 @@ namespace farmacia
 
         private void clienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+           Cliente fc = new Cliente();
+            fc.MdiParent = this;
+            fc.Show();
         }
 
         private void Menu_Load(object sender, EventArgs e)
