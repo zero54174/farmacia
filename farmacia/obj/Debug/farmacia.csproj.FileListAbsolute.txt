@@ -9,3 +9,15 @@ C:\git\farmacia\farmacia\obj\Debug\farmacia.csprojAssemblyReference.cache
 C:\git\farmacia\farmacia\obj\Debug\farmacia.inicio.resources
 C:\git\farmacia\farmacia\obj\Debug\farmacia.Login.resources
 C:\git\farmacia\farmacia\obj\Debug\farmacia.Menu.resources
+C:\Users\Hp\Documents\GitHub\farmacia\farmacia\bin\Debug\farmacia.exe.config
+C:\Users\Hp\Documents\GitHub\farmacia\farmacia\bin\Debug\farmacia.exe
+C:\Users\Hp\Documents\GitHub\farmacia\farmacia\bin\Debug\farmacia.pdb
+C:\Users\Hp\Documents\GitHub\farmacia\farmacia\obj\Debug\farmacia.csprojAssemblyReference.cache
+C:\Users\Hp\Documents\GitHub\farmacia\farmacia\obj\Debug\farmacia.Cliente.resources
+C:\Users\Hp\Documents\GitHub\farmacia\farmacia\obj\Debug\farmacia.inicio.resources
+C:\Users\Hp\Documents\GitHub\farmacia\farmacia\obj\Debug\farmacia.Login.resources
+C:\Users\Hp\Documents\GitHub\farmacia\farmacia\obj\Debug\farmacia.Menu.resources
+C:\Users\Hp\Documents\GitHub\farmacia\farmacia\obj\Debug\farmacia.Properties.Resources.resources
+C:\Users\Hp\Documents\GitHub\farmacia\farmacia\obj\Debug\farmacia.csproj.GenerateResource.cache
+C:\Users\Hp\Documents\GitHub\farmacia\farmacia\obj\Debug\farmacia.exe
+C:\Users\Hp\Documents\GitHub\farmacia\farmacia\obj\Debug\farmacia.pdb
