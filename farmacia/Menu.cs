@@ -47,6 +47,34 @@ namespace farmacia
         {
             Application.Exit();
         }
+
+        private void empleadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            empleado fe = new empleado();
+            fe.MdiParent = this;
+            fe.Show();
+        }
+
+        private void medicamentoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            medicamento fme = new medicamento();
+            fme.MdiParent = this;
+            fme.Show();
+        }
+
+        private void laboratorioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            laboratorio fl = new laboratorio();
+            fl.MdiParent = this;
+            fl.Show();
+        }
+
+        private void proveedorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            proveedor fp = new proveedor();
+            fp.MdiParent = this;
+            fp.Show();
+        }
     }
     
 }

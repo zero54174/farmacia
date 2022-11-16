@@ -14,16 +14,18 @@ namespace farmacia
 {
     public partial class Cliente : Form
     {
-        private SqlCommand command;
+        Conexion srv = new Conexion();
 
         public Cliente()
         {
             InitializeComponent();
         }
 
+       
+
         private void Cliente_Load(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection("data source=DESKTOP-3J24IC0\\SQLEX;integrated security=yes; database=bd_farmacia");
+            SqlConnection con = srv.Conectar();
             SqlDataAdapter da = new SqlDataAdapter("select*from cliente", con);
             DataSet ds = new DataSet();
             da.Fill(ds);
@@ -89,7 +91,7 @@ namespace farmacia
             if (radioButton1.Checked)
 
             {
-                SqlConnection con = new SqlConnection("data source=DESKTOP-3J24IC0\\SQLEX;integrated security=yes; database=bd_farmacia");
+                SqlConnection con = srv.Conectar();
                 SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM cliente WHERE nombre LIKE '" + txtbuscar.Text + "%'", con);
                 DataSet ds = new DataSet();
                 da.Fill(ds);
@@ -98,7 +100,7 @@ namespace farmacia
             if (radioButton2.Checked)
             {
                 if (txtbuscar.Text!="") {
-                    SqlConnection con = new SqlConnection("data source=DESKTOP-3J24IC0\\SQLEX;integrated security=yes; database=bd_farmacia");
+                    SqlConnection con = srv.Conectar();
                     SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM cliente WHERE cod_clt like '" + txtbuscar.Text + "%'", con);
                     DataSet ds = new DataSet();
                     da.Fill(ds);
@@ -111,14 +113,11 @@ namespace farmacia
 
         private void btmodificar_Click(object sender, EventArgs e)
         { 
-            SqlConnection con = new SqlConnection("data source=DESKTOP-3J24IC0\\SQLEX;integrated security=yes; database=bd_farmacia");
-            SqlDataAdapter da = new SqlDataAdapter();
-
-            
             String sql = "UPDATE cliente SET nombre = '" + txtnombre.Text + "', paterno = '" + txtpaterno.Text +
                                                     "', materno = '" + txtmaterno.Text + "', direccion = '" + txtdireccion.Text +
                                                     "', telefono = '" + txttelefono.Text + "', correo = '" + txtcorreo.Text
                                                     + "' WHERE cod_clt =  " + txtcodigo.Text;
+            SqlConnection con = srv.Conectar();
             con.Open();
             SqlCommand cmd = new SqlCommand(sql, con);
             cmd.ExecuteNonQuery();
@@ -139,6 +138,35 @@ namespace farmacia
         {
             limpiar_text();
             habilitar();
+        }
+
+        private void btguardar_Click(object sender, EventArgs e)
+        {
+            SqlConnection con = srv.Conectar();
+            String sql = "INSERT INTO cliente(nombre, paterno, materno, direccion, telefono, correo) VALUES('" + txtnombre.Text + "', '" + txtpaterno.Text +
+                                                                                                            "', '" + txtmaterno.Text + "', '" + txtdireccion.Text +
+                                                                                                            "', '" + txttelefono.Text + "', '" + txtcorreo.Text + "')";
+            con.Open();
+            SqlCommand cmd = new SqlCommand(sql, con);
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Se ha insertado Correcta");
+            btbuscar_Click(sender, new EventArgs());
+            con.Close();
+
+            Limpiar();
+        }
+        private void bteliminar_Click(object sender, EventArgs e)
+        {
+            SqlConnection con = srv.Conectar();
+            String sql = "DELETE FROM cliente WHERE cod_clt= "+txtcodigo.Text;
+            //DELETE FROM cliente WHERE cod_clt=1
+            con.Open();
+            SqlCommand cmd = new SqlCommand(sql, con);
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Se ha eliminado Correcta");
+            btbuscar_Click(sender, new EventArgs());
+            con.Close();
+
         }
     }
 }

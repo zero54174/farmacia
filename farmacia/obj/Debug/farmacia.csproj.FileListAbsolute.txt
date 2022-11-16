@@ -21,3 +21,7 @@ C:\Users\Hp\Documents\GitHub\farmacia\farmacia\obj\Debug\farmacia.Properties.Res
 C:\Users\Hp\Documents\GitHub\farmacia\farmacia\obj\Debug\farmacia.csproj.GenerateResource.cache
 C:\Users\Hp\Documents\GitHub\farmacia\farmacia\obj\Debug\farmacia.exe
 C:\Users\Hp\Documents\GitHub\farmacia\farmacia\obj\Debug\farmacia.pdb
+C:\Users\Hp\Documents\GitHub\farmacia\farmacia\obj\Debug\farmacia.empleado.resources
+C:\Users\Hp\Documents\GitHub\farmacia\farmacia\obj\Debug\farmacia.medicamento.resources
+C:\Users\Hp\Documents\GitHub\farmacia\farmacia\obj\Debug\farmacia.laboratorio.resources
+C:\Users\Hp\Documents\GitHub\farmacia\farmacia\obj\Debug\farmacia.proveedor.resources
