@@ -15,7 +15,7 @@ namespace farmacia
     public partial class empleado : Form
     {
         Conexion srv = new Conexion();
-
+        SqlCommand command = new SqlCommand();
         public empleado()
         {
             InitializeComponent();
@@ -141,14 +141,14 @@ namespace farmacia
         private void btmodificar_Click(object sender, EventArgs e)
         {
             SqlConnection con = srv.Conectar();
-            String sql = " UPDATE empleado SET nombre = '"+ txtnombre.Text + "', '" + txtpaterno.Text +
-                                                           "', '" + txtmaterno.Text + "', '" + txtdireccion.Text +
-                                                           "', " + txttelefono.Text +
-                                                           "WHERE ci = " + txtcodigo.Text;
+            String sql = " UPDATE empleado SET nombre = '"+ txtnombre.Text + "', paterno= '" + txtpaterno.Text +
+                                                           "',materno = '" + txtmaterno.Text + "',direccion = '" + txtdireccion.Text +
+                                                           "', telefono =" + txttelefono.Text +
+                                                           " WHERE ci = " + txtcodigo.Text;
             con.Open();
             SqlCommand cmd = new SqlCommand(sql, con);
             cmd.ExecuteNonQuery();
-            MessageBox.Show("Modificacion Correcta");
+            MessageBox.Show("Se ha insertado Correctamente");
             btbuscar_Click(sender, new EventArgs());
             con.Close();
 
@@ -158,7 +158,7 @@ namespace farmacia
         private void bteliminar_Click(object sender, EventArgs e)
         {
             SqlConnection con = srv.Conectar();
-            String sql = "DELETE FROM empleado WHERE ci= " + txtcodigo.Text;
+            String sql = "DELETE FROM empleado WHERE ci = " + txtcodigo.Text;
             con.Open();
             SqlCommand cmd = new SqlCommand(sql, con);
             cmd.ExecuteNonQuery();

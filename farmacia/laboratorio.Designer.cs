@@ -258,7 +258,7 @@
             this.dglab.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dglab.Location = new System.Drawing.Point(315, 76);
             this.dglab.Name = "dglab";
-            this.dglab.Size = new System.Drawing.Size(606, 150);
+            this.dglab.Size = new System.Drawing.Size(633, 150);
             this.dglab.TabIndex = 64;
             this.dglab.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dglab_MouseDoubleClick);
             // 
@@ -266,7 +266,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(933, 326);
+            this.ClientSize = new System.Drawing.Size(960, 332);
             this.Controls.Add(this.dglab);
             this.Controls.Add(this.txtcodigo);
             this.Controls.Add(this.txtbuscar);

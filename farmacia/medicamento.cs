@@ -125,7 +125,7 @@ namespace farmacia
 
         private void btguardar_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection("data source=DESKTOP-3J24IC0\\SQLEX;integrated security=yes; database=bd_farmacia");
+            SqlConnection con = srv.Conectar();
             SqlDataAdapter da = new SqlDataAdapter();
 
 
@@ -143,7 +143,7 @@ namespace farmacia
         private void bteliminar_Click(object sender, EventArgs e)
         {
             SqlConnection con = srv.Conectar();
-            String sql = "DELETE FROM medicamento WHERE cod_med= " + txtcodigo.Text;
+            String sql = "DELETE FROM medicamento WHERE cod_med = " + txtcodigo.Text;
             con.Open();
             SqlCommand cmd = new SqlCommand(sql, con);
             cmd.ExecuteNonQuery();

@@ -158,7 +158,7 @@ namespace farmacia
         private void bteliminar_Click(object sender, EventArgs e)
         {
             SqlConnection con = srv.Conectar();
-            String sql = "DELETE FROM cliente WHERE cod_clt= "+txtcodigo.Text;
+            String sql = "DELETE FROM cliente WHERE cod_clt= " + txtcodigo.Text;
             //DELETE FROM cliente WHERE cod_clt=1
             con.Open();
             SqlCommand cmd = new SqlCommand(sql, con);

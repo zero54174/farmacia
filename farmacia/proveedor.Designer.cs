@@ -170,11 +170,11 @@
             // 
             // dgprov
             // 
-            this.dgprov.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.dgprov.BackgroundColor = System.Drawing.SystemColors.ControlDark;
             this.dgprov.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgprov.Location = new System.Drawing.Point(303, 86);
             this.dgprov.Name = "dgprov";
-            this.dgprov.Size = new System.Drawing.Size(522, 222);
+            this.dgprov.Size = new System.Drawing.Size(641, 184);
             this.dgprov.TabIndex = 117;
             this.dgprov.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dgprov_MouseDoubleClick);
             // 
@@ -290,7 +290,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(853, 388);
+            this.ClientSize = new System.Drawing.Size(977, 390);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblLab);
             this.Controls.Add(this.txtlab);

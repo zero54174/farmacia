@@ -73,6 +73,16 @@ namespace farmacia.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _5031_Tendencias_para_gestionar_el_capital_humano_de_tu_pyme_en_el_2022_ {
+            get {
+                object obj = ResourceManager.GetObject("5031-Tendencias-para-gestionar-el-capital-humano-de-tu-pyme-en-el-2022-", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap acceso {
             get {
                 object obj = ResourceManager.GetObject("acceso", resourceCulture);
@@ -86,6 +96,46 @@ namespace farmacia.Properties {
         internal static System.Drawing.Bitmap btn_ingresar {
             get {
                 object obj = ResourceManager.GetObject("btn_ingresar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap distribucion_farmacia_merchandising {
+            get {
+                object obj = ResourceManager.GetObject("distribucion_farmacia_merchandising", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap distribucion_farmacia_merchandising1 {
+            get {
+                object obj = ResourceManager.GetObject("distribucion_farmacia_merchandising1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap experiencia_empleado_importancia {
+            get {
+                object obj = ResourceManager.GetObject("experiencia-empleado-importancia", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap farmacia_farmaceutico_cliente_mostrador_36082_453 {
+            get {
+                object obj = ResourceManager.GetObject("farmacia-farmaceutico-cliente-mostrador_36082-453", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -15,6 +15,7 @@ namespace farmacia
     public partial class laboratorio : Form
     {
         Conexion srv = new Conexion();
+        SqlCommand command = new SqlCommand();
 
         public laboratorio()
         {
@@ -116,7 +117,7 @@ namespace farmacia
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection("data source=DESKTOP-3J24IC0\\SQLEX;integrated security=yes; database=bd_farmacia");
+            SqlConnection con = srv.Conectar();
             SqlDataAdapter da = new SqlDataAdapter();
 
 
@@ -133,10 +134,13 @@ namespace farmacia
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
+
             SqlConnection con = srv.Conectar();
-            String sql = " UPDATE laboratorio SET nombre = '" + txtNombre.Text + "',direccion ='" + txtDireccion.Text + "', telefono = '" + txtTelefono.Text + 
-                                                           "', email=" + txtEmail.Text + "', web=" + txtWeb.Text +
-                                                           "WHERE cod_lab = " + txtcodigo.Text;
+            //String sql = " UPDATE laboratorio SET nombre = '" + txtNombre.Text + "',direccion ='" + txtDireccion.Text + "', telefono = " + txtTelefono.Text +
+            //                                               ", email ='" + txtEmail.Text + "', web = '" + txtWeb.Text +
+            //                                               "' WHERE cod_lab = " + txtcodigo.Text + "'";
+            String sql = " UPDATE laboratorio SET 	nombre = '" +txtNombre.Text + "', direccion ='" + txtDireccion.Text + "',telefono = '" + txtTelefono.Text +
+                                                           "',email = '" + txtEmail.Text + "',web = '" + txtWeb.Text + "' WHERE cod_lab = " + txtcodigo.Text;
             con.Open();
             SqlCommand cmd = new SqlCommand(sql, con);
             cmd.ExecuteNonQuery();

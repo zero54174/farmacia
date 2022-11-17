@@ -121,8 +121,17 @@
   <data name="inicio_v1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\inicio_v1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="acceso" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\acceso.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="distribucion_farmacia_merchandising1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\distribucion_farmacia_merchandising1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="5031-Tendencias-para-gestionar-el-capital-humano-de-tu-pyme-en-el-2022-" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5031-Tendencias-para-gestionar-el-capital-humano-de-tu-pyme-en-el-2022-.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="experiencia-empleado-importancia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\experiencia-empleado-importancia.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="distribucion_farmacia_merchandising" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\distribucion_farmacia_merchandising.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btn_ingresar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btn_ingresar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -132,5 +141,11 @@
   </data>
   <data name="4510.jpg_wh860" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\4510.jpg_wh860.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acceso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\acceso.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="farmacia-farmaceutico-cliente-mostrador_36082-453" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\farmacia-farmaceutico-cliente-mostrador_36082-453.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

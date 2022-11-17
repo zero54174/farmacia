@@ -219,6 +219,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::farmacia.Properties.Resources.distribucion_farmacia_merchandising;
             this.ClientSize = new System.Drawing.Size(587, 463);
             this.Controls.Add(this.dgmedicamento);
             this.Controls.Add(this.txtbuscar);

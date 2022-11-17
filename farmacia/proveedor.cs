@@ -46,18 +46,13 @@ namespace farmacia
                 txtdireccion.Text = Convert.ToString(dgprov[3, fila].Value);
                 txttelefono.Text = Convert.ToString(dgprov[4, fila].Value);
                 txtlab.Text = Convert.ToString(dgprov[5, fila].Value);
-                //cbolab.Text = Convert.ToString(dgprov[6, fila].Value);
+                //txtlab.Text = Convert.ToString(dgprov[6, fila].Value);
 
 
                 sw = true;
 
             }
-            limpiar_text();
-            txtnombre.Enabled = true;
-            txtnit.Enabled = true;
-            txtdireccion.Enabled = true;
-            txttelefono.Enabled = true;
-            txtlab.Enabled = true;
+
         }
         public void habilitar()
         {
@@ -66,7 +61,7 @@ namespace farmacia
             txtnit.Enabled = true;
             txtdireccion.Enabled = true;
             txttelefono.Enabled = true;
-            txtlab.Enabled = true;
+            //txtlab.Enabled = true;
 
         }
         public void Limpiar()
@@ -121,13 +116,16 @@ namespace farmacia
 
         private void btnguardar_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection("data source=DESKTOP-3J24IC0\\SQLEX;integrated security=yes; database=bd_farmacia");
+            SqlConnection con = srv.Conectar();
             SqlDataAdapter da = new SqlDataAdapter();
+            //String temp = cbolab.GetItemText(cbolab.SelectedItem);
+            txtlab.Text = cbolab.GetItemText(cbolab.SelectedValue);
 
 
-            String sql = "insert into proveedor values ('" + txtnombre.Text + "', '" + txtnit.Text +
-                                                       "', '" + txtdireccion.Text + "', '" + txttelefono.Text +
-                                                       "', " + txtlab.Text + ")";
+            String sql = "insert into proveedor (nombre, nit, direccion, telefono, cod_lab) values ('" + txtnombre.Text + "','" + txtnit.Text +
+                                                       "','" + txtdireccion.Text + "', " + txttelefono.Text +
+                                                       ",'" + txtlab.Text + "')";
+
             con.Open();
             SqlCommand cmd = new SqlCommand(sql, con);
             cmd.ExecuteNonQuery();
@@ -141,10 +139,11 @@ namespace farmacia
         private void btnmodificar_Click(object sender, EventArgs e)
         {
             SqlConnection con = srv.Conectar();
-            String sql = " UPDATE proveedor SET nombre = '" + txtnombre.Text + "', '" + txtnit.Text +
-                                                           "', '" + txtdireccion.Text + "', '" + txttelefono.Text +
-                                                           "', " + txtlab.Text +
-                                                           "WHERE cod_provee = " + txtcodigo.Text;
+            String sql = " UPDATE proveedor SET nombre = '" + txtnombre.Text + "', nit = '" + txtnit.Text + "', direccion = '" + txtdireccion.Text +
+                                                         "', telefono = '" + txttelefono.Text + "' WHERE cod_provee = " + txtcodigo.Text ;
+            //String sql = " UPDATE proveedor SET nombre = '" + txtnombre.Text +"', nit = '" + txtnit.Text + "', direccion = '" + txtdireccion.Text + 
+            //                                             "', telefono = '" + txttelefono.Text + "', cod_lab = " + txtcodigo.Text ;
+
             con.Open();
             SqlCommand cmd = new SqlCommand(sql, con);
             cmd.ExecuteNonQuery();
@@ -170,12 +169,16 @@ namespace farmacia
         private void listar_lab()
         {
             SqlConnection con = srv.Conectar();
-            SqlDataAdapter da = new SqlDataAdapter("select * from laboratorio", con);
+            SqlDataAdapter da = new SqlDataAdapter("select cod_lab, nombre from laboratorio", con);
             DataSet ds = new DataSet();
             da.Fill(ds);
+            cbolab.DataSource = ds.Tables[0];
+            cbolab.DisplayMember = "nombre";
+            cbolab.ValueMember = "cod_lab";
             //cbolab.Items.Insert(0,"Seleccione");
-            foreach (DataRow reg in ds.Tables[0].Rows)
-                cbolab.Items.Add(reg[1].ToString().Trim());
+            //foreach (DataRow reg in ds.Tables[0].Rows)
+            //  cbolab.Items.Add(reg[1].ToString().Trim());
+
 
 
             //DataRow r = ds.Tables[0].Rows[0];

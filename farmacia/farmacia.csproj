@@ -160,5 +160,20 @@
   <ItemGroup>
     <None Include="Resources\4510.jpg_wh860.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\experiencia-empleado-importancia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\distribucion_farmacia_merchandising.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\distribucion_farmacia_merchandising1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5031-Tendencias-para-gestionar-el-capital-humano-de-tu-pyme-en-el-2022-.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\farmacia-farmaceutico-cliente-mostrador_36082-453.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
